@@ -12,6 +12,7 @@ class Spike (private val gameScreen: GameScreen) {
     private var timer = 0f
     private val secondsPerFrame = 0.2f
     private val sound = Gdx.audio.newSound(Gdx.files.internal("sounds/hits/sword3.mp3"))
+    private val array = Array<Int>(4) { 0 }
 
     private val position = Vector2(0F, 0F)
     private var active = false
